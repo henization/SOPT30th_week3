@@ -31,11 +31,15 @@ function App() {
     { img: jaeMin, name: "나재민" },
     { img: jeNo, name: "이제노" },
     { img: eunWoo, name: "차은우" },
+    { img: jungHan, name: "윤정한" },
+    { img: hoShi, name: "권호시" },
+    { img: kyoungSoo, name: "도경수" },
+    { img: minHyung, name: "이민형" },
   ];
   // 배열 랜덤으로 재정렬
   const randomGameInfo = gameInfo.sort(() => Math.random() - 0.5);
 
-  const [round, setRound] = useState("8강");
+  const [round, setRound] = useState("16강");
   const matchWinners = useRef([]);
   const [fighterList, setFighterList] = useState(randomGameInfo);
   const [gameEnd, setGameEnd] = useState(false);
@@ -63,7 +67,11 @@ function App() {
   };
   // 화면이 리렌더링 될 때 마다 참가자들 배열과 승리자들 배열 확인
   useEffect(() => {
-    if (fighterList.length === 0 && matchWinners.current.length >= 4) {
+    if (fighterList.length === 0 && matchWinners.current.length >= 8) {
+      setFighterList(matchWinners.current);
+      setRound("8강");
+      matchWinners.current = [];
+    } else if (fighterList.length === 0 && matchWinners.current.length >= 4) {
       setFighterList(matchWinners.current);
       setRound("4강");
       matchWinners.current = [];
