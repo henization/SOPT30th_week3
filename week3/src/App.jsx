@@ -15,6 +15,14 @@ import jaeHyun from "@/assets/image/정재현.jpg";
 import doYoung from "@/assets/image/김도영.jpg";
 import jungWoo from "@/assets/image/김정우.jpg";
 import dongHyuk from "@/assets/image/이동혁.jpg";
+import jiYong from "@/assets/image/권지용.jpg";
+import jaeMin from "@/assets/image/나재민.jpg";
+import jeNo from "@/assets/image/이제노.jpg";
+import eunWoo from "@/assets/image/차은우.jpg";
+import jungHan from "@/assets/image/윤정한.jpg";
+import hoShi from "@/assets/image/권호시.jpg";
+import kyoungSoo from "@/assets/image/도경수.jpg";
+import minHyung from "@/assets/image/이민형.jpg";
 
 function App() {
   // 월드컵 참여자들 배열
