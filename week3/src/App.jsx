@@ -27,6 +27,10 @@ function App() {
     { img: doYoung, name: "김도영" },
     { img: jungWoo, name: "김정우" },
     { img: dongHyuk, name: "이동혁" },
+    { img: jiYong, name: "권지용" },
+    { img: jaeMin, name: "나재민" },
+    { img: jeNo, name: "이제노" },
+    { img: eunWoo, name: "차은우" },
   ];
   // 배열 랜덤으로 재정렬
   const randomGameInfo = gameInfo.sort(() => Math.random() - 0.5);
