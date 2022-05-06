@@ -72,6 +72,7 @@ function App() {
     setGameEnd(false);
     matchWinners.current = [];
     setFighterList(randomGameInfo);
+    setRound("16강");
   };
   // 화면이 리렌더링 될 때 마다 참가자들 배열과 승리자들 배열 확인
   useEffect(() => {
